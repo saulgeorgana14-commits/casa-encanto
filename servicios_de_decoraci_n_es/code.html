@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="es-MX"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Servicios y Decoración | Casa Encanto</title>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#775e3c",
+                    "surface-bright": "#fbf9f4",
+                    "on-surface-variant": "#444840",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#121f0b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#acbc9d",
+                    "on-tertiary-fixed": "#201b11",
+                    "primary-fixed": "#d7e8c7",
+                    "on-secondary-fixed": "#291800",
+                    "primary": "#3e4c34",
+                    "surface-container": "#f0eee9",
+                    "background": "#fbf9f4",
+                    "outline": "#75786f",
+                    "secondary": "#725a38",
+                    "surface-container-highest": "#e4e2dd",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#bfb6a6",
+                    "tertiary": "#363126",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "secondary-fixed-dim": "#e1c298",
+                    "inverse-surface": "#30312e",
+                    "on-primary-fixed-variant": "#3d4b33",
+                    "secondary-container": "#fcdaaf",
+                    "surface-dim": "#dbdad5",
+                    "surface": "#fbf9f4",
+                    "tertiary-fixed": "#ece1d1",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#c5c8bd",
+                    "tertiary-container": "#4e473b",
+                    "on-background": "#1b1c19",
+                    "tertiary-fixed-dim": "#cfc5b5",
+                    "on-tertiary-fixed-variant": "#4c463a",
+                    "inverse-on-surface": "#f2f1ec",
+                    "inverse-primary": "#bbccac",
+                    "primary-container": "#3e4c34",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed-variant": "#594323",
+                    "secondary-fixed": "#ffddb2",
+                    "surface-tint": "#546349",
+                    "on-surface": "#1b1c19",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#bbccac",
+                    "surface-container-low": "#f5f3ee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "content-gap": "32px",
+                    "margin-mobile": "20px",
+                    "base": "8px",
+                    "max-width": "1200px",
+                    "section-gap": "80px",
+                    "stack-xl": "64px",
+                    "stack-lg": "32px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "stack-xs": "4px",
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-xl": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<div class="flex items-center gap-3">
+<img alt="Logo Casa Encanto" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVbkgBFlOFFQmf0HFh4aTckyWkO2WwSuYIUCCY9ACJLLs4R3o4P72XgT8q90gVugWPYNASFlGbxTpI2SK9AiwHOKY7qPiF5_cP4A4u54DyffChrwoThLxzKvwwliBjLacvJzlGq2NdxuCSVeyhtTrwhclaXhTh4V07zO2vJoENcqd1jGMlQ3Jc9BZvR2IypG_01LvidO9YngKzbwXK97sYiLNjkEDdaS5BECI0AUJkm_Y4GVu2fRJs_H9wlZ2UFaHkFGmP5U3GVg"/>
+<span class="font-headline-md text-headline-md text-primary italic hidden sm:inline">Casa Encanto</span>
+</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="../casa_encanto_inicio_es/code.html">Inicio</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="../cat_logo_de_rentas_es/code.html">Rentas</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md" href="../servicios_de_decoraci_n_es/code.html">Servicios</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="#">Portafolio</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors duration-300" href="../contacto_y_cotizaciones_es/code.html">Contacto</a>
+</div>
+<button onclick="window.location.href='../contacto_y_cotizaciones_es/code.html'" class="bg-primary text-on-primary px-stack-lg py-stack-sm rounded-lg hover:opacity-90 transition-all active:scale-95 font-label-md">
+                Solicitar Cotización
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[700px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUiFb3nM2C6qj2Mwu8Qsah9f1j6SO-cMke5Xzm9Zk6eaprfSeZiGOkHqGx9kmXP9tHyiksewVaBwYwE2tmsXB_NEj0V_zi75ArfTHPqoBSG9rml6Lq0Ix3dIxQVkRp6BTGTAeGeOdiClm2UEgG-nKwd5CyyXABSQsICf_b-zb2DCgKVjPn0wwVGY38WTDbSCcZ1gRWcZIvzAH2_n2K8mCvYKHV4FlnjmLJr3bUp6MV5Hax0wbgX2Qgy6BgVxMQPXWPGf307UdBE74"/>
+<div class="absolute inset-0 bg-on-background/30 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline-xl text-white mb-stack-md">Estilismo Artístico para Ocasiones Eternas</h1>
+<p class="font-body-lg text-white/90 mb-stack-lg">Desde instalaciones florales a medida hasta mesas curadas meticulosamente, transformamos espacios en experiencias artesanales inmersivas.</p>
+</div>
+</div>
+</section>
+<!-- Services Breakdown -->
+<section class="py-stack-xl bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl items-center">
+<div class="space-y-stack-lg">
+<span class="inline-block px-stack-md py-stack-xs bg-primary text-on-primary rounded-full font-label-md uppercase tracking-wider">Estilismo Artístico</span>
+<h2 class="font-headline-lg text-on-surface">Una Atmósfera Curada</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Nuestra filosofía de estilismo se basa en el diálogo entre la naturaleza y la arquitectura. No solo decoramos; componemos. Cada mueble, cada caída de lino y cada vela colocada es parte de una narrativa mayor diseñada para evocar intimidad y grandeza en igual medida.</p>
+<ul class="space-y-stack-sm">
+<li class="flex items-center gap-stack-sm font-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                                Montajes de Mesa a Medida
+                            </li>
+<li class="flex items-center gap-stack-sm font-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                                Curaduría de Mantelería Texturizada
+                            </li>
+<li class="flex items-center gap-stack-sm font-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+                                Diseño de Iluminación Personalizado
+                            </li>
+</ul>
+</div>
+<div class="aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEp8fyAebwkKvd2OMp9W9BAGjHcoIr5lAtgKnmkRibbFNLzbEiLImzpDqgd2kW2NIxiUfpmJ-4FDZM9Hf5kX8rW3J0j9v8F5MHsec6KkHV4F00fxQjpq8oaUMP3Vah9n0V-TOJ4nXu3qjyynMJHLJK2Z2umB6zNrxwxF-YVzh6zgd1c0E7e2ndtjEW3_LeFgRWP-VH_blhL0IUrHz4VVHikszb2bf_UrU9FBYEcst93zdP7Ulcrj5-numUwFZ4R4AIVzG-ZOePJsw"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl items-center mt-stack-xl">
+<div class="order-2 md:order-1 aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LGgp1OKf11SwiJ6cddM3I-BnRSotGP0j692Z5vnjwOnXjiFfRhIH0DZVV8QnxtzZAPONPF-jXDmUNlWqHU4uJa8wict01PXlJSDs12hkHHJeWk7Yw4dRIW4b1jG7anoc67AvwdteSYRMIlgYmDdIi6K01wuYYoFMWiy2d8eARi7V5b9DB1onj_29FRoYWJjjesrzyem35n051TDj-CB7nE1Mpc7sDY3Six8wYgVzEykKyQri4ceGyQthEVzcuVmnDhR7sv1lER0"/>
+</div>
+<div class="order-1 md:order-2 space-y-stack-lg">
+<span class="inline-block px-stack-md py-stack-xs bg-primary text-on-primary rounded-full font-label-md uppercase tracking-wider">Diseño Floral Personalizado</span>
+<h2 class="font-headline-lg text-on-surface">Arte de Temporada</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Nuestro estudio floral se especializa en arreglos silvestres inspirados en la naturaleza que honran el ritmo de las estaciones. Suministramos exclusivamente de productores locales para asegurar que cada pétalo y enredadera se sienta fresca, orgánica y profundamente conectada con el entorno de su celebración.</p>
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="p-stack-md bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary mb-stack-xs" data-icon="local_florist">local_florist</span>
+<h4 class="font-label-md text-on-surface">Ramos de Novia</h4>
+<p class="font-label-sm text-on-surface-variant">Bouquets distintivos y flores personales.</p>
+</div>
+<div class="p-stack-md bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary mb-stack-xs" data-icon="park">park</span>
+<h4 class="font-label-md text-on-surface">Gran Escala</h4>
+<p class="font-label-sm text-on-surface-variant">Arcos, instalaciones y puntos focales.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Process -->
+<section class="py-stack-xl bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-stack-xl">
+<h2 class="font-headline-lg text-on-surface mb-stack-sm">El Camino hacia tu Evento</h2>
+<p class="font-body-md text-on-surface-variant">Un proceso colaborativo y fluido desde la primera chispa de inspiración hasta la instalación final.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center space-y-stack-md p-stack-md border border-outline-variant/30 bg-surface rounded-xl">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-md shadow-md">1</div>
+<h3 class="font-headline-md text-on-surface">Consulta</h3>
+<p class="font-body-md text-on-surface-variant">Comenzamos con una charla íntima sobre tu visión, paleta de colores y la atmósfera deseada.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center space-y-stack-md p-stack-md border border-outline-variant/30 bg-surface rounded-xl">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-md shadow-md">2</div>
+<h3 class="font-headline-md text-on-surface">Concepto de Diseño</h3>
+<p class="font-body-md text-on-surface-variant">Nuestro equipo presenta un moodboard curado y una propuesta detallada de selección floral y renta.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center space-y-stack-md p-stack-md border border-outline-variant/30 bg-surface rounded-xl">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-md shadow-md">3</div>
+<h3 class="font-headline-md text-on-surface">Refinamiento</h3>
+<p class="font-body-md text-on-surface-variant">Una visita al lugar y una sesión de prueba aseguran que cada detalle se alinee perfectamente con la arquitectura del recinto.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center space-y-stack-md p-stack-md border border-outline-variant/30 bg-surface rounded-xl">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-md shadow-md">4</div>
+<h3 class="font-headline-md text-on-surface">Instalación</h3>
+<p class="font-body-md text-on-surface-variant">El día del evento, nuestros artesanos ejecutan el diseño con precisión, cuidando cada detalle con esmero.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-stack-xl bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-xl">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-on-surface">Momentos Curados</h2>
+<p class="font-body-md text-on-surface-variant">Una colección de nuestras bodas, fiestas de jardín y reuniones artesanales favoritas.</p>
+</div>
+<button class="hidden md:block font-label-md text-primary hover:opacity-70 underline underline-offset-8">Ver Portafolio Completo</button>
+</div>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-md h-auto md:h-[1000px]">
+<div class="md:col-span-8 md:row-span-1 rounded-xl overflow-hidden group relative bg-surface-container-low">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3Yi-asBjww3Y_W1V0ddGIDrWqX4Q0uXHs4u00-YY8jJuOozLpeDHSucT1vQzZ-OngU4ZrBBsDHSemHU1Qg9f6yKLPddvHlzFSR9arHQUCw6NMu8TCPakjCi9p2iEgrrU7jgrtF32g_SJ8v2bSoRjhKJAOg8x7XK5AZBHxid76EBdy_cR61jucjjku4b2klkAs_zLSBwNbKTLtD3s2geAFbfo3fGiBomG7mC7kqBGD2uLyU0gUtX1VGRxBpqcVhbQTm45Igwu7OmI"/>
+<div class="absolute bottom-0 left-0 right-0 p-stack-lg bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label-sm text-white/80 uppercase tracking-widest">Boda al Aire Libre</span>
+<p class="font-headline-md text-white">The Meadow Gala, Hudson Valley</p>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 rounded-xl overflow-hidden group relative bg-surface-container-low">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhRhGq8YzpYW3XfqhW5zBB0IwI5m9AdE5OMAsuqvOT5GXlQXhN0Z4H1eyzvJYq8b7-O8lWfb3iBz5zRmQEJwzFGiZMPkI0WUjj3AcuctIqyF_qXBrPVjGzrkAzxUKo6BxCGAX5sBJypyRTcNRojqKgcSDWR8KzZiTC_tEaNbiL1_4B_2aHpAncixdOnYcxE05fNQluhfOfbe_2aepCVQdcbqHuJsVKoPMMHVEPOyp4lR8t6Pktzn9_KyzSWNnYQO2K4OqiAPCSS-I"/>
+<div class="absolute bottom-0 left-0 right-0 p-stack-lg bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label-sm text-white/80 uppercase tracking-widest">Reunión de Jardín</span>
+<p class="font-headline-md text-white">Solsticio de Primavera, Londres</p>
+</div>
+</div>
+<div class="md:col-span-4 md:row-span-1 rounded-xl overflow-hidden group relative bg-surface-container-low">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2KipwCPDFQoqCXbQck_cv0c5_wEoGDfvrMM9IgEdqLCgll0OSWMKaDU4FPNYA1eCmiG_I9EGcYikQxWj4UisJvAnOd-t8RCb6xp6N_OPMjkXGQIpHlGViKM13R0thv7RNiKWOw1XsHjwyZS3WGiQGyC0PUZ0vLjbv0D8N5lxtCifibHJkaFSVl44gVEDVH7tTfzOIMORE0gPAxaiXHDoGHR6yassXcowLpApo7Th7rv6UEjQ9FjhY4NyJddOo1tQTR0CVSQ7ITVY"/>
+<div class="absolute bottom-0 left-0 right-0 p-stack-lg bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label-sm text-white/80 uppercase tracking-widest">Arte Floral</span>
+<p class="font-headline-md text-white">Cosecha de Otoño, Napa</p>
+</div>
+</div>
+<div class="md:col-span-8 md:row-span-1 rounded-xl overflow-hidden group relative bg-surface-container-low">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDES2ZomaoRFMzJUok3XNUcs_sj6xz9fs9fyb21Me-OhyFZ7thzTRLpXjm7tg-Te7AbpOTF31lcEC9k5LBrnPuXipYaTh4hH7V_GVhjwQhCKWK5TpBuB-UNpVgabZIVEUUtSzY-i6fJNnjsBzG2UJ0mLs76E1oXi4LbrUggyJkv2LVpxVQHqWEaXPVwnsULY6kW91VQrxQ2jbSghTTwLW_EbZ1LKj4fSpFY0ROq6r85YYWQ5U640zpOExu_7iyr92sG3GSVcIkBltU"/>
+<div class="absolute bottom-0 left-0 right-0 p-stack-lg bg-gradient-to-t from-black/60 to-transparent">
+<span class="font-label-sm text-white/80 uppercase tracking-widest">Intimidad Moderna</span>
+<p class="font-headline-md text-white">Loft a la Luz de las Velas, Brooklyn</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-stack-xl bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="bg-surface-container p-stack-xl rounded-2xl border border-primary/10">
+<h2 class="font-headline-xl text-on-surface mb-stack-md italic">¿Listos para curar su historia?</h2>
+<p class="font-body-lg text-on-surface-variant mb-stack-lg max-w-xl mx-auto">Contáctanos para una consulta privada y deja que nuestro equipo de diseño cree una experiencia única para tu próxima celebración.</p>
+<div class="flex flex-col md:flex-row gap-stack-md justify-center">
+<button onclick="window.location.href='../contacto_y_cotizaciones_es/code.html'" class="px-stack-xl py-stack-md bg-primary text-on-primary rounded-lg font-label-md hover:opacity-90 transition-all">Solicitar Consulta</button>
+<button class="px-stack-xl py-stack-md border-2 border-primary text-primary rounded-lg font-label-md hover:bg-primary/5 transition-all">Descargar Folleto</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-xl bg-surface-container-low border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop items-start">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<img alt="Logo Casa Encanto" class="h-14 w-14 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVbkgBFlOFFQmf0HFh4aTckyWkO2WwSuYIUCCY9ACJLLs4R3o4P72XgT8q90gVugWPYNASFlGbxTpI2SK9AiwHOKY7qPiF5_cP4A4u54DyffChrwoThLxzKvwwliBjLacvJzlGq2NdxuCSVeyhtTrwhclaXhTh4V07zO2vJoENcqd1jGMlQ3Jc9BZvR2IypG_01LvidO9YngKzbwXK97sYiLNjkEDdaS5BECI0AUJkm_Y4GVu2fRJs_H9wlZ2UFaHkFGmP5U3GVg"/>
+<span class="font-headline-md text-headline-md text-primary italic">Casa Encanto</span>
+</div>
+<p class="font-body-md text-on-surface-variant mt-stack-sm">Eventos Curados Artísticamente. Especialistas en estilismo a medida y diseño floral personalizado para celebraciones exclusivas.</p>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-md text-primary mb-stack-xs">Explorar</span>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Colecciones</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Coordinación</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Diseño Floral</a>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-md text-primary mb-stack-xs">Conectar</span>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="#">Términos</a>
+<a class="text-on-surface-variant hover:text-primary transition-all font-body-md" href="../contacto_y_cotizaciones_es/code.html">Contacto</a>
+<p class="font-label-sm text-on-surface-variant/60 mt-stack-md">© 2024 Casa Encanto. Eventos Curados Artísticamente.</p>
+</div>
+</div>
+</footer>
+</body></html>

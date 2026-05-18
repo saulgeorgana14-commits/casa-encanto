@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es-MX"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#775e3c",
+                    "surface-bright": "#fbf9f4",
+                    "on-surface-variant": "#444840",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#121f0b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#acbc9d",
+                    "on-tertiary-fixed": "#201b11",
+                    "primary-fixed": "#d7e8c7",
+                    "on-secondary-fixed": "#291800",
+                    "primary": "#28351f",
+                    "surface-container": "#f0eee9",
+                    "background": "#fbf9f4",
+                    "outline": "#75786f",
+                    "secondary": "#725a38",
+                    "surface-container-highest": "#e4e2dd",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#bfb6a6",
+                    "tertiary": "#363126",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-variant": "#e4e2dd",
+                    "secondary-fixed-dim": "#e1c298",
+                    "inverse-surface": "#30312e",
+                    "on-primary-fixed-variant": "#3d4b33",
+                    "secondary-container": "#fcdaaf",
+                    "surface-dim": "#dbdad5",
+                    "surface": "#fbf9f4",
+                    "tertiary-fixed": "#ece1d1",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#c5c8bd",
+                    "tertiary-container": "#4e473b",
+                    "on-background": "#1b1c19",
+                    "tertiary-fixed-dim": "#cfc5b5",
+                    "on-tertiary-fixed-variant": "#4c463a",
+                    "inverse-on-surface": "#f2f1ec",
+                    "inverse-primary": "#bbccac",
+                    "primary-container": "#3e4c34",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed-variant": "#594323",
+                    "secondary-fixed": "#ffddb2",
+                    "surface-tint": "#546349",
+                    "on-surface": "#1b1c19",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#bbccac",
+                    "surface-container-low": "#f5f3ee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "content-gap": "32px",
+                    "margin-mobile": "20px",
+                    "base": "8px",
+                    "max-width": "1200px",
+                    "section-gap": "80px",
+                    "stack-xl": "64px",
+                    "stack-lg": "32px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "headline-xl": ["Libre Caslon Text"],
+                    "headline-lg": ["Libre Caslon Text"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f4;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center max-w-max-width mx-auto px-margin-mobile md:px-gutter h-20">
+<div class="flex items-center gap-3">
+<img alt="Casa Encanto Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVbkgBFlOFFQmf0HFh4aTckyWkO2WwSuYIUCCY9ACJLLs4R3o4P72XgT8q90gVugWPYNASFlGbxTpI2SK9AiwHOKY7qPiF5_cP4A4u54DyffChrwoThLxzKvwwliBjLacvJzlGq2NdxuCSVeyhtTrwhclaXhTh4V07zO2vJoENcqd1jGMlQ3Jc9BZvR2IypG_01LvidO9YngKzbwXK97sYiLNjkEDdaS5BECI0AUJkm_Y4GVu2fRJs_H9wlZ2UFaHkFGmP5U3GVg"/>
+<div class="font-headline-md text-headline-md text-primary italic hidden sm:block">Casa Encanto</div>
+</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="../casa_encanto_inicio_es/code.html">Inicio</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="../cat_logo_de_rentas_es/code.html">Rentas</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="../servicios_de_decoraci_n_es/code.html">Servicios</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#">Portafolio</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-300" href="../contacto_y_cotizaciones_es/code.html">Contacto</a>
+</div>
+<button onclick="window.location.href='../contacto_y_cotizaciones_es/code.html'" class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-95">
+            Cotizar Evento
+        </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[800px] w-full overflow-hidden flex items-center">
+<img alt="Celebración Casa Encanto Hero" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMOssTe7vbtRF4XpZhgm12-EVUg3qIqiDH9GytaC4VeQrHfXXMfDa5NBcApNLEmfKyRpbNWgJAWXLbjlZpjLxcdHg4nIsJC30CVhRaOaGr4ovsCjBMIUK0bPxufVPgomYrsQdMfOaOH8_RRyUqyNOpLuLYIB1HXtOS8PxUOgnHxNDvOAIpHAsBvr3sssf7G9SLwOGpNVYY60a8Uy8lR5cyF_HkQKvmFjlhz8JJ5o9fd0iI4dOPPJNzidbbelh0Sx9oZtzPpzN4gU"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative max-w-max-width mx-auto px-margin-mobile md:px-gutter w-full">
+<div class="max-w-2xl text-white">
+<h1 class="font-headline-xl text-headline-xl mb-stack-md leading-tight">Celebraciones con Toque Artesanal</h1>
+<p class="font-body-lg text-body-lg mb-stack-lg opacity-90">Diseño de eventos a medida y renta de mobiliario premium para tus momentos más especiales.</p>
+<div class="flex gap-stack-md">
+<button onclick="window.location.href='../cat_logo_de_rentas_es/code.html'" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors">
+                        Explorar Colecciones
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Philosophy -->
+<section class="py-section-gap max-w-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl items-center">
+<div class="space-y-stack-lg">
+<span class="text-secondary font-label-md text-label-md tracking-widest uppercase">La Esencia</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Nuestra Filosofía</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    En Casa Encanto, creemos que cada evento es un lienzo vivo. Nuestro enfoque combina la elegancia de la hospitalidad clásica con un toque moderno y artesanal. No solo proveemos mobiliario; curamos atmósferas que se sienten como si hubieran crecido orgánicamente dentro del espacio.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+                    Desde la veta táctil de la madera acabada a mano hasta la suave caída del lino italiano, cada detalle es seleccionado para elevar la conexión humana en el corazón de su celebración.
+                </p>
+<div class="pt-stack-md">
+<a class="text-primary font-label-md text-label-md border-b border-primary/30 hover:border-primary transition-all inline-block" href="#">Conoce Nuestra Historia</a>
+</div>
+</div>
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden rounded-xl">
+<img alt="Artesanía y Detalle" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAebb9Q0KGa2Xj58JhF5p5orenTAmKh-dpc5hNvj6m9U4pR62mH_zGHuVW9P1oD-7UpsfL0wfhlLz1t9qveHNeovjKJLBDIrwHWDHRT9le1_3a8FatQ_4jwSdxe1VhFrYL1LWVaoJZQlkI8mxoT-HqfWBAF51TRjljeDdiIesS_qZObRiahjzqwPTYmsOXvAKPY1IVEj_LOdU0Bv248uB1Dcg4LOQLlY7_e0Tow9sqeyD1hoGZmMxp0U9Ohecx5E0Nc7PrW9eR2YIc"/>
+</div>
+<div class="absolute -bottom-8 -left-8 hidden lg:block bg-surface-container p-stack-lg max-w-xs shadow-md border-l-4 border-primary rounded-lg">
+<p class="italic font-headline-md text-headline-md text-primary">"La calidad es el silencio entre las notas de un gran evento."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Rentals -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="flex justify-between items-end mb-stack-xl">
+<div>
+<span class="text-secondary font-label-md text-label-md uppercase">Inventario</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Rentas Destacadas</h2>
+</div>
+<a class="hidden md:block text-primary font-label-md text-label-md hover:text-primary-container transition-colors" href="../cat_logo_de_rentas_es/code.html">Ver Todas las Colecciones →</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Feature: Tables -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="aspect-[16/9] md:aspect-auto md:h-[500px]">
+<img alt="Mesa Harvest Artesanal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9y-bXr21SyuKMFuCTBP63Q4GMACa96RWYvA6zDK8r2ECYi-wDw6e1q0n_2vE7WgysqifhWxYWTE6H7QL9enUM2RzYtsHo7PxOSsvsRTmBXD5rfwpqaNSTLN5FnjxrCvTCNyBSC8bTaJGJG2KRX5CXwp0tL6lHHV1HdcJVe-Eg--j97TtOmAqZYBv2ZonvdKQT6dKhtctoyrfPsNgkLEUhYH_rqPUBwl07wev0_zEjQdkRXvtyeTe5TSxJjiEcnB2M6ao9Nkb65FI"/>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-stack-lg bg-gradient-to-t from-black/70 to-transparent text-white">
+<h3 class="font-headline-md text-headline-md">Mesa Harvest Artesanal</h3>
+<p class="font-label-md text-label-md opacity-80 uppercase">Roble tallado a mano • $120.00/u</p>
+</div>
+</div>
+<!-- Small Item: Chairs -->
+<div class="md:col-span-4 grid grid-rows-2 gap-gutter">
+<div class="bg-surface-container-lowest p-stack-md group shadow-sm hover:shadow-md transition-all rounded-xl border border-outline-variant/30">
+<div class="aspect-square overflow-hidden mb-stack-sm rounded-lg">
+<img alt="Silla Provence Bistro" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCiLibcmFBBd4m2id77bt0JGcxNIx4j-NmHipmaPcFwVoYE5VTAA1etd6mozZ7sH9vkOPA_eMmFGFrNjp93oscRCxWWkuXntitrPu5zpEGCdi8ERVybr6cXiAiYZtsLvgnDgJarhysrrURmhZrY5LkhZijLTb9P5OorPp4HPjdVfGgQbb8ViODXnn9cKyhpb2ImYLj3jKPxSrKJDuSH3JmSRnILA129eTs8Byod_wdgIwcyyIa-3KfmDSYcKfQgECBFdJiV2Y5_Dg"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-background">Provence Bistro</h4>
+<span class="inline-block bg-primary/10 text-primary px-2 py-0.5 rounded-full text-label-sm font-label-sm uppercase">Vintage</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">$18.00</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-stack-md group shadow-sm hover:shadow-md transition-all rounded-xl border border-outline-variant/30">
+<div class="aspect-square overflow-hidden mb-stack-sm rounded-lg">
+<img alt="Silla Velvet Lounge" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRHPou42z-qeGz-MR8fXKODdv68zbpPImVm-_D9vlQJ57FzJhuGejEbavYi6DqlQkU55a-nHwSVsxkwDJL-AB9cAxf-CCQwdYDC7pw8JiF5eHIulgwBcerRC64hWkqsgLJ0kf8ZLdZyVJtT1gCylQWACXzrn7i1y_r7eF3ZnXPpapNDhCFyaKmAWuxYri_DlL_yBFOoNNGklG54mA6saPc3JbN1hf644G328BXDwpYDEwBOyjAmRgqAVwzuqhUIY8lEUdlKXiZWIc"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline-md text-headline-md text-on-background">Velvet Lounge</h4>
+<span class="inline-block bg-primary/10 text-primary px-2 py-0.5 rounded-full text-label-sm font-label-sm uppercase">Moderno</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">$45.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Decoration Highlights -->
+<section class="py-section-gap max-w-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-stack-xl max-w-2xl mx-auto">
+<span class="text-secondary font-label-md text-label-md uppercase">Toques Finales</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-stack-md">Destacados de Decoración</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Eleva tu mesa con nuestra selección de mantelería fina y centros de mesa artesanales.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-stack-md overflow-hidden bg-primary-container rounded-xl">
+<img alt="Linos Toscanos" class="w-full h-full object-cover opacity-90 transition-all duration-500 group-hover:opacity-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCihPZAYyVfkkrUjFUay6fcfoIPUC5hN1YPoV8iXGjJVLi-uCF9C3VUm06hibUg7qEPAyqpR9VcCfRkKxDXVkhUNA1MUQqcvylm_AlVSbeEvgQU5-gsW9TLEYPjwE0xNUhJ2gVDbjmWXANPnj8UL5gSmXvf4G50FsfEOc_xNUUNOsjWSJY82Y1tW7HKIyZHauINDoYQ25lX16ycF-YhnZ2-CM2S-CWQNk_R8PEgjp3yzcQrrzNwLwaLj0lRLNeO_t16FqLYFvnE4g4"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background text-center group-hover:text-primary transition-colors">Linos Toscanos</h3>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-stack-md overflow-hidden bg-primary-container rounded-xl">
+<img alt="Cerámica Artesanal" class="w-full h-full object-cover opacity-90 transition-all duration-500 group-hover:opacity-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs1k_jg0WvtxLpIPlLZ-CkSVHcF_b5wfGbGwILkUSMtN_p6D_AeHGsFMgNDisKfmFpOWnZHrXGqhsvE4kSwpSLsE8wAaEEErihBkssH9udUPUJ9yL-OgTxMOFBsZyiIx4m14MTcsCnCfgGraRFUPfwIg34WtdKyETquZG5AiG025utI92_VRRCn0JVB2VQn2L1-FLoPvgkBTeHIjw0NaowtfmYyeCWHzYVTV5d0HlqvKbFIxTUkkNVvIXe49lpa4A5-icuHabcuJ8"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background text-center group-hover:text-primary transition-colors">Cerámica Artesanal</h3>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-stack-md overflow-hidden bg-primary-container rounded-xl">
+<img alt="Acentos Florales" class="w-full h-full object-cover opacity-90 transition-all duration-500 group-hover:opacity-100 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6NbyvtMMIOQfJZpjjHo9HEdiYHaXh_lZxmvggsKt_TDAMAztaq0K4uNpTS20_EdCDLL01avVwFormK1fjgu6Tu8G-1GKHPosBJKOYYcBhXJ6Aou69K99QRdeJjZw0_FnHi2nEyNJe-likv_XZWvQK3Ql8UDWYg5-_7R3z18tUrxdrKUE5z60ZbUmyoF9Yli-lH6HUO0qDaA-rUFJXtayt7w-fglnIWQKIcmy6qATANm2SO-yyXUf9NZrbbsGJZmy4rZMJ3OtxVLo"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background text-center group-hover:text-primary transition-colors">Acentos Florales</h3>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="bg-primary-container text-on-primary-container p-stack-xl flex flex-col md:flex-row items-center justify-between gap-stack-lg rounded-2xl">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg mb-stack-md">¿Listos para comenzar su historia?</h2>
+<p class="font-body-lg text-body-lg opacity-80">Agenda una consulta personal para diseñar la experiencia de tu evento a medida.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-stack-md w-full sm:w-auto">
+<button onclick="window.location.href='../contacto_y_cotizaciones_es/code.html'" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors shadow-sm">
+                        Reservar Evento
+                    </button>
+<button onclick="window.location.href='../cat_logo_de_rentas_es/code.html'" class="border border-primary text-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-primary/5 transition-colors">
+                        Descargar Catálogo
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container py-section-gap border-t border-outline-variant/30">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-start">
+<div class="space-y-stack-md">
+<div class="flex items-center gap-3 mb-4">
+<img alt="Casa Encanto Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVbkgBFlOFFQmf0HFh4aTckyWkO2WwSuYIUCCY9ACJLLs4R3o4P72XgT8q90gVugWPYNASFlGbxTpI2SK9AiwHOKY7qPiF5_cP4A4u54DyffChrwoThLxzKvwwliBjLacvJzlGq2NdxuCSVeyhtTrwhclaXhTh4V07zO2vJoENcqd1jGMlQ3Jc9BZvR2IypG_01LvidO9YngKzbwXK97sYiLNjkEDdaS5BECI0AUJkm_Y4GVu2fRJs_H9wlZ2UFaHkFGmP5U3GVg"/>
+<div class="font-headline-md text-headline-md text-primary italic">Casa Encanto</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
+                    Eventos Curados con Arte. Especialistas en colecciones de renta de alta gama y diseño de celebraciones personalizadas.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-stack-lg">
+<div class="space-y-stack-sm">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider">Servicios</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all text-body-md" href="#">Colecciones</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all text-body-md" href="#">Coordinación</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all text-body-md" href="#">Diseño Floral</a></li>
+</ul>
+</div>
+<div class="space-y-stack-sm">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider">Legal</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant hover:text-primary transition-all text-body-md" href="#">Términos</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-all text-body-md" href="../contacto_y_cotizaciones_es/code.html">Contacto</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-stack-md">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-wider">Boletín</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant/70">Recibe nuestras guías de inspiración de temporada.</p>
+<div class="flex border-b border-primary/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full font-label-md text-label-md placeholder:text-on-surface-variant/40" placeholder="Tu Correo Electrónico" type="email"/>
+<button class="material-symbols-outlined text-primary hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="mt-stack-xl pt-stack-md border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant/60">© 2024 Casa Encanto. Eventos Curados con Arte.</span>
+<div class="flex gap-stack-lg">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="facebook">social_leaderboard</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="share">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

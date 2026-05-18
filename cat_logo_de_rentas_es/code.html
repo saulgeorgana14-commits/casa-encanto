@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es-MX"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary-container": "#775e3c",
+                "surface-bright": "#fbf9f4",
+                "on-surface-variant": "#444840",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#121f0b",
+                "surface-container-lowest": "#ffffff",
+                "on-primary-container": "#acbc9d",
+                "on-tertiary-fixed": "#201b11",
+                "primary-fixed": "#d7e8c7",
+                "on-secondary-fixed": "#291800",
+                "primary": "#3e4c34",
+                "surface-container": "#f0eee9",
+                "background": "#fbf9f4",
+                "outline": "#75786f",
+                "secondary": "#725a38",
+                "surface-container-highest": "#e4e2dd",
+                "error-container": "#ffdad6",
+                "on-tertiary-container": "#bfb6a6",
+                "tertiary": "#363126",
+                "on-error": "#ffffff",
+                "on-error-container": "#93000a",
+                "surface-variant": "#e4e2dd",
+                "secondary-fixed-dim": "#e1c298",
+                "inverse-surface": "#30312e",
+                "on-primary-fixed-variant": "#3d4b33",
+                "secondary-container": "#fcdaaf",
+                "surface-dim": "#dbdad5",
+                "surface": "#fbf9f4",
+                "tertiary-fixed": "#ece1d1",
+                "error": "#ba1a1a",
+                "on-secondary": "#ffffff",
+                "outline-variant": "#c5c8bd",
+                "tertiary-container": "#4e473b",
+                "on-background": "#1b1c19",
+                "tertiary-fixed-dim": "#cfc5b5",
+                "on-tertiary-fixed-variant": "#4c463a",
+                "inverse-on-surface": "#f2f1ec",
+                "inverse-primary": "#bbccac",
+                "primary-container": "#3e4c34",
+                "surface-container-high": "#eae8e3",
+                "on-secondary-fixed-variant": "#594323",
+                "secondary-fixed": "#ffddb2",
+                "surface-tint": "#546349",
+                "on-surface": "#1b1c19",
+                "on-primary": "#ffffff",
+                "primary-fixed-dim": "#bbccac",
+                "surface-container-low": "#f5f3ee"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "content-gap": "32px",
+                "margin-mobile": "20px",
+                "base": "8px",
+                "max-width": "1200px",
+                "section-gap": "80px",
+                "stack-xl": "64px",
+                "stack-md": "16px",
+                "stack-sm": "8px",
+                "stack-lg": "32px",
+                "stack-xs": "4px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": ["Libre Caslon Text"],
+                "label-md": ["Plus Jakarta Sans"],
+                "body-md": ["Plus Jakarta Sans"],
+                "headline-md": ["Libre Caslon Text"],
+                "headline-xl": ["Libre Caslon Text"],
+                "headline-lg": ["Libre Caslon Text"],
+                "label-sm": ["Plus Jakarta Sans"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "display-lg": ["Libre Caslon Text"],
+                "label-lg": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-surface/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/20">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<div class="flex items-center gap-3">
+<img alt="Logotipo Casa Encanto" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVbkgBFlOFFQmf0HFh4aTckyWkO2WwSuYIUCCY9ACJLLs4R3o4P72XgT8q90gVugWPYNASFlGbxTpI2SK9AiwHOKY7qPiF5_cP4A4u54DyffChrwoThLxzKvwwliBjLacvJzlGq2NdxuCSVeyhtTrwhclaXhTh4V07zO2vJoENcqd1jGMlQ3Jc9BZvR2IypG_01LvidO9YngKzbwXK97sYiLNjkEDdaS5BECI0AUJkm_Y4GVu2fRJs_H9wlZ2UFaHkFGmP5U3GVg"/>
+<div class="font-headline-md text-headline-md text-primary italic hidden sm:block">Casa Encanto</div>
+</div>
+<div class="hidden md:flex gap-stack-lg items-center">
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors duration-300" href="../casa_encanto_inicio_es/code.html">Inicio</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-lg" href="../cat_logo_de_rentas_es/code.html">Rentas</a>
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors duration-300" href="../servicios_de_decoraci_n_es/code.html">Servicios</a>
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors duration-300" href="#">Portafolio</a>
+<a class="text-on-surface-variant font-label-lg hover:text-primary transition-colors duration-300" href="../contacto_y_cotizaciones_es/code.html">Contacto</a>
+</div>
+<button onclick="window.location.href='../contacto_y_cotizaciones_es/code.html'" class="bg-primary text-on-primary px-stack-lg py-stack-sm font-label-lg hover:opacity-90 transition-all active:scale-95 rounded">Solicitar Cotización</button>
+</div>
+</nav>
+<main class="pt-32 pb-stack-xl max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<header class="mb-stack-xl">
+<h1 class="font-display-lg text-headline-xl text-on-surface mb-stack-sm">La Colección Curada</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Descubre un inventario seleccionado con arte, desde mobiliario artesanal hasta elementos esenciales para eventos.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="space-y-stack-lg">
+<div class="space-y-stack-md">
+<h3 class="font-label-lg text-label-lg text-primary border-b border-outline-variant pb-2">Categorías</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Mesas</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Sillas</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Mantelería</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Acentos Decorativos</span>
+</label>
+</div>
+</div>
+<div class="space-y-stack-md">
+<h3 class="font-label-lg text-label-lg text-primary border-b border-outline-variant pb-2">Estilo</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary/10 text-primary font-label-lg rounded-full cursor-pointer hover:bg-primary hover:text-on-primary transition-all">Moderno</span>
+<span class="px-3 py-1 bg-primary/10 text-primary font-label-lg rounded-full cursor-pointer hover:bg-primary hover:text-on-primary transition-all">Rústico</span>
+<span class="px-3 py-1 bg-primary/10 text-primary font-label-lg rounded-full cursor-pointer hover:bg-primary hover:text-on-primary transition-all">Clásico</span>
+<span class="px-3 py-1 bg-primary/10 text-primary font-label-lg rounded-full cursor-pointer hover:bg-primary hover:text-on-primary transition-all">Vintage</span>
+</div>
+</div>
+<div class="space-y-stack-md">
+<h3 class="font-label-lg text-label-lg text-primary border-b border-outline-variant pb-2">Rango de Precio</h3>
+<div class="space-y-4">
+<input class="w-full accent-primary" max="500" min="0" type="range"/>
+<div class="flex justify-between font-label-lg text-on-surface-variant">
+<span>$0</span>
+<span>$500+</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="space-y-stack-lg">
+<!-- Sorting and Search Mobile Trigger -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant">Mostrando <span class="text-on-surface font-semibold">18</span> productos</p>
+<div class="flex items-center gap-4 w-full md:w-auto">
+<select class="bg-transparent border-none font-label-lg focus:ring-0 cursor-pointer text-primary">
+<option>Ordenar por: Más reciente</option>
+<option>Precio: Menor a mayor</option>
+<option>Precio: Mayor a menor</option>
+</select>
+</div>
+</div>
+<!-- Bento / Grid Layout for Items -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Item Card 1 -->
+<div class="group flex flex-col bg-surface-container-low border border-transparent hover:border-outline-variant/30 transition-all hover:shadow-sm p-4 rounded">
+<div class="relative aspect-[4/5] overflow-hidden mb-stack-md rounded">
+<img alt="Silla Crossback Vineyard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_TkwV0bXAX4oMupXCC3OM2NSYDFT-DBWKJZpOp7xT4anqA5e5ok56NTgPE2a1uq5va7MZXUqMyfvI2WFnCVIpAaUmn2phYo9gDYviNQBwRQ11G17FYt3Lzgqd4pwGcvN-tvbPTL-iWp_R4U_tMFFXR-Xt2us_4kxdSx8gcb91x_soxaaf9HknJ9eBs8jCk_sz-VHAdjJVERUC0W9o_MJeCNbOCWmUOZ2xhMd_z_XTQi0QQrjx4l87uRbuZjcLyi9cKw65lj4RHk0"/>
+<span class="absolute top-4 right-4 bg-primary/20 text-primary backdrop-blur-md px-3 py-1 font-label-lg rounded-full">Rústico</span>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface">Silla Crossback Vineyard</h3>
+<p class="font-label-lg text-label-lg text-primary mt-1">$12.00 / día</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm flex-grow">Roble sólido con acabado natural, perfecta para ceremonias al aire libre y recepciones rústicas.</p>
+<button class="mt-stack-lg bg-primary text-on-primary w-full py-stack-sm font-label-lg hover:opacity-90 transition-colors active:scale-95 rounded">Agregar a Cotización</button>
+</div>
+</div>
+<!-- Item Card 2 -->
+<div class="group flex flex-col bg-surface-container-low border border-transparent hover:border-outline-variant/30 transition-all hover:shadow-sm p-4 rounded">
+<div class="relative aspect-[4/5] overflow-hidden mb-stack-md rounded">
+<img alt="Mantel de Seda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGj5p2UyNQeBrdcx1Lkq2av9P0TeVYHpZdoDFsa2euu5bWRvWCDUw0kuOLBCSmt2bbnWAos4SCIGkRgSBQhAsuBUMTov4Qwt4Hl1MkG60pwPDyobzNjJxERkTze-8KRIRcaVq96G9k60sWD0VN_i17DdyMDaOHpWS_IXNo3vQm00BmjTkwyKfxGdilhYCIHEB8i2U1JOXcX30cJqZ1CY0TdXusJs0cUKeuDOdpGGcyDdtzRHhxFm2LIrWqcwKsXJ-RXQaVrTvEd1Q"/>
+<span class="absolute top-4 right-4 bg-primary/20 text-primary backdrop-blur-md px-3 py-1 font-label-lg rounded-full">Clásico</span>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface">Mantel de Seda Champaña</h3>
+<p class="font-label-lg text-label-lg text-primary mt-1">$45.00 / día</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm flex-grow">Seda de alto gramaje con un brillo sutil, añadiendo una capa de lujo sin esfuerzo a tus mesas.</p>
+<button class="mt-stack-lg bg-primary text-on-primary w-full py-stack-sm font-label-lg hover:opacity-90 transition-colors active:scale-95 rounded">Agregar a Cotización</button>
+</div>
+</div>
+<!-- Item Card 3 -->
+<div class="group flex flex-col bg-surface-container-low border border-transparent hover:border-outline-variant/30 transition-all hover:shadow-sm p-4 rounded">
+<div class="relative aspect-[4/5] overflow-hidden mb-stack-md rounded">
+<img alt="Acento Decorativo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZH0jCGtChlHHXEBQRE2KIJCLwpx83EQg4JZ5xDosyNZmpZ5huoFD7XbYCiYZPQ8YU1zWRay4EKB-KhEQGcpYCOsJWmxU2AcvoahavbZmaqTN3nj0fZlwCkhZU50865Aw5w2wE0fT5AVq1RGTyZyKCzmLn2AS1v91o3FeHbI1vEYIutGQwUovKx4kohv5NDd7ZxycVvTyR_H77jARKF1yCSjQbpLS7lvsibWJuKBH6v-jgqGYf-yTQm-AbxOEkY0YmP9wIgi-RdSw"/>
+<span class="absolute top-4 right-4 bg-primary/20 text-primary backdrop-blur-md px-3 py-1 font-label-lg rounded-full">Vintage</span>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface">Candelabro de Oro Antiguo</h3>
+<p class="font-label-lg text-label-lg text-primary mt-1">$18.00 / día</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm flex-grow">Centro de mesa de latón con cinco brazos y un acabado antiguo pulido a mano para montajes dramáticos.</p>
+<button class="mt-stack-lg bg-primary text-on-primary w-full py-stack-sm font-label-lg hover:opacity-90 transition-colors active:scale-95 rounded">Agregar a Cotización</button>
+</div>
+</div>
+<!-- Item Card 4 -->
+<div class="group flex flex-col bg-surface-container-low border border-transparent hover:border-outline-variant/30 transition-all hover:shadow-sm p-4 rounded">
+<div class="relative aspect-[4/5] overflow-hidden mb-stack-md rounded">
+<img alt="Silla Parisina" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWPMJEXWsnwbjD6VfcPCVKZr7PvC-7WkGSQUW3zyHI4vTkueOuX0q6wGAuSHGRDvOp3frSQGPGDXgrrhC4FvEc72PYiYYj4mGZ_eeIDGV3uQZOYN3KiT7OiLt2QrHxJ8Q3jtD7_Ep9Teqo5ts3Nny8A3ENKPq33b2toujBXoPTPvCdoYXrfnermshIk434YBawOjixu_SRoYQBKle-Thah82tDcyy0s86dvRPrn2C1Yq8rwSI8WQtwQ8Wqos0LHAqWYg00dmZaCxw"/>
+<span class="absolute top-4 right-4 bg-primary/20 text-primary backdrop-blur-md px-3 py-1 font-label-lg rounded-full">Moderno</span>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface">Silla Bistro Parisina</h3>
+<p class="font-label-lg text-label-lg text-primary mt-1">$15.00 / día</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm flex-grow">Diseño tejido icónico con estructura reforzada, mezclando el encanto europeo con durabilidad moderna.</p>
+<button class="mt-stack-lg bg-primary text-on-primary w-full py-stack-sm font-label-lg hover:opacity-90 transition-colors active:scale-95 rounded">Agregar a Cotización</button>
+</div>
+</div>
+<!-- Item Card 5 -->
+<div class="group flex flex-col bg-surface-container-low border border-transparent hover:border-outline-variant/30 transition-all hover:shadow-sm p-4 rounded">
+<div class="relative aspect-[4/5] overflow-hidden mb-stack-md rounded">
+<img alt="Mantel de Terciopelo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcgLAInbypQX_r1RTm1R_CamrkiBEwr_NYn2L-ttdMjdej_ipfyzKSuc7PROt2-RLthCWiNEEYKQKEx_wXeCaZHny8sCeioWM4nudkJgZvXarF8LZ94Zudr35YEm6OWjBR-7zjq0J8JvOs0dISAl_tSXngcTY9vGnRRwVsRZoqdSDZ4OKyNoWBUgBLFPdemoC7cb58QL0Sef1HTzhBYnEBlHKp4Iwps35OBc9Wf1K1GBJ-y_zomj2Yp1pcoDuAjVc4k66AieycH7I"/>
+<span class="absolute top-4 right-4 bg-primary/20 text-primary backdrop-blur-md px-3 py-1 font-label-lg rounded-full">Moderno</span>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface">Mantel de Terciopelo Esmeralda</h3>
+<p class="font-label-lg text-label-lg text-primary mt-1">$55.00 / día</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm flex-grow">Opulento terciopelo de pelo profundo, proporcionando un rico contraste textural para paletas de eventos en tonos joya.</p>
+<button class="mt-stack-lg bg-primary text-on-primary w-full py-stack-sm font-label-lg hover:opacity-90 transition-colors active:scale-95 rounded">Agregar a Cotización</button>
+</div>
+</div>
+<!-- Item Card 6 -->
+<div class="group flex flex-col bg-surface-container-low border border-transparent hover:border-outline-variant/30 transition-all hover:shadow-sm p-4 rounded">
+<div class="relative aspect-[4/5] overflow-hidden mb-stack-md rounded">
+<img alt="Mesa Farmhouse" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMDwJACEYTe1juyKrszYKwUsGQypX7tQyBg9wOzDrq6SXBVKfHnYHl1VUelrcJPJ_VhvCwhr15GYoAcJKbHe_fTmAmAJVvXdhLVpKfAWglCIQfd1pVQytELg4-57N59rqruXxxp-iuBdNI0Elsmws_gZlzyK-k9z4hObDXwtrjD-nIFPt3DV5FkK3cah7HAeh6rMd0g2wCVzN5YM750KhzXQ0GCL87xvt14J_zNc80wwUn1eNe5wgf_6hssDcgtVhcHYvrehIRyYI"/>
+<span class="absolute top-4 right-4 bg-primary/20 text-primary backdrop-blur-md px-3 py-1 font-label-lg rounded-full">Rústico</span>
+</div>
+<div class="flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface">Mesa Farmhouse Recuperada</h3>
+<p class="font-label-lg text-label-lg text-primary mt-1">$120.00 / día</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-stack-sm flex-grow">Capacidad para 10 personas cómodamente. Hecha a mano con madera sostenible y una superficie suave pulida con cera.</p>
+<button class="mt-stack-lg bg-primary text-on-primary w-full py-stack-sm font-label-lg hover:opacity-90 transition-colors active:scale-95 rounded">Agregar a Cotización</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-4 pt-stack-xl">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-primary hover:bg-primary hover:text-on-primary transition-all rounded">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="font-label-lg text-on-surface">Página 1 de 4</span>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-primary hover:bg-primary hover:text-on-primary transition-all rounded">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full py-stack-xl border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop items-start">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Logotipo Casa Encanto" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVbkgBFlOFFQmf0HFh4aTckyWkO2WwSuYIUCCY9ACJLLs4R3o4P72XgT8q90gVugWPYNASFlGbxTpI2SK9AiwHOKY7qPiF5_cP4A4u54DyffChrwoThLxzKvwwliBjLacvJzlGq2NdxuCSVeyhtTrwhclaXhTh4V07zO2vJoENcqd1jGMlQ3Jc9BZvR2IypG_01LvidO9YngKzbwXK97sYiLNjkEDdaS5BECI0AUJkm_Y4GVu2fRJs_H9wlZ2UFaHkFGmP5U3GVg"/>
+<div class="font-headline-md text-headline-md text-primary italic">Casa Encanto</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Rentas de eventos curadas con arte y coordinación para los momentos más bellos de la vida.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg text-primary font-bold">Colecciones</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Asientos</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Mesas</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Textiles</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg text-primary font-bold">Inspiración</h4>
+<nav class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Galería</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Historias</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all" href="#">Lookbook</a>
+</nav>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-lg text-label-lg text-primary font-bold">Conectar</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">share</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">mail</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform">location_on</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/60 mt-stack-lg">© 2024 Casa Encanto. Eventos Curados con Arte.</p>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button - Mobile Quote Cart -->
+<div class="fixed bottom-6 right-6 md:hidden">
+<button class="bg-primary text-on-primary w-14 h-14 rounded-full shadow-lg flex items-center justify-center active:scale-90 transition-all">
+<span class="material-symbols-outlined">receipt_long</span>
+</button>
+</div>
+</body></html>
