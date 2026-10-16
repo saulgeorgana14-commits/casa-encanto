@@ -1,0 +1,5 @@
+# basura de macOS en exFAT y secretos (respaldo del SSD, 15-oct-2026)
+._*
+.DS_Store
+.env*
+!.env.example
